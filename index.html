@@ -91,8 +91,8 @@ const menu=document.getElementById('menu'),links=document.getElementById('links'
 menu.addEventListener('click',()=>links.classList.toggle('open'));
 links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
 document.getElementById('year').textContent=new Date().getFullYear();
-const SUPABASE_FUNCTION_URL='https://addxfcpbgwgmgsphokyd.supabase.co/functions/v1/website-lead-intake';
-const SUPABASE_PUBLISHABLE_KEY='sb_publishable_XtONU8WiUJscoXQSn4F78g_sb7oTdm7';
+const SUPABASE_FUNCTION_URL='https://udsaqqbypgjrhhukakup.supabase.co/functions/v1/website-lead-intake';
+const SUPABASE_PUBLISHABLE_KEY='sb_publishable_KwGLiiIJlgmuPW5imhi0Ew_rQjSh92a';
 document.getElementById('quoteForm').addEventListener('submit',async e=>{
  e.preventDefault();const form=e.currentTarget;const d=new FormData(form);const button=document.getElementById('submitQuote');const status=document.getElementById('formStatus');
  button.disabled=true;button.textContent='ENVIANDO...';status.textContent='Enviando sua solicitação com segurança.';
