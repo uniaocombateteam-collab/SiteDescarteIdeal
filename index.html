@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10271f">
+<meta name="description" content="Descarte Ideal – Soluções Ambientais. Coleta, remoção e soluções logísticas de resíduos para empresas.">
+<title>Descarte Ideal – Soluções Ambientais</title>
+<style>
+:root{--pine:#10271f;--pine2:#1a3b2d;--green:#315d43;--sage:#a9c69a;--lime:#c2d8a7;--paper:#f3f5f0;--white:#fff;--ink:#19251e;--muted:#69766d;--line:#dce3da}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+header{height:78px;position:sticky;top:0;z-index:30;background:rgba(16,39,31,.97);color:white;border-bottom:1px solid #ffffff1c;backdrop-filter:blur(12px)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:800;letter-spacing:.11em}.brand small{display:block;font-size:9px;letter-spacing:.22em;color:#b7c8b9;font-weight:600;margin-top:2px}.brandmark{width:38px;height:38px;border:1px solid var(--lime);border-radius:3px;display:grid;place-items:center;color:var(--lime);font-size:21px;font-weight:700;position:relative}.brandmark:after{content:"";position:absolute;width:9px;height:9px;border-right:2px solid var(--lime);border-bottom:2px solid var(--lime);right:5px;bottom:5px}
+.links{display:flex;gap:27px;align-items:center;font-size:12px;color:#d6e1d8}.links a:hover{color:var(--lime)}.cta{background:var(--lime);color:var(--pine);font-size:12px;font-weight:800;padding:12px 17px;border-radius:3px}.menu{display:none;background:transparent;color:white;border:1px solid #789083;padding:8px 12px;border-radius:3px}
+.hero{min-height:650px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(8,25,19,.96),rgba(8,25,19,.79) 53%,rgba(8,25,19,.25)),url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=2000&q=85') center/cover}
+.hero-inner{padding:100px 0;max-width:760px}.eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#b9d49d;font-weight:800}.hero h1{font-size:clamp(42px,6vw,70px);line-height:1.04;letter-spacing:-.045em;font-weight:720;margin:22px 0}.hero p{max-width:610px;color:#d9e2db;font-size:16px;margin:0 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;justify-content:center;align-items:center;padding:13px 19px;font-size:12px;font-weight:800;border-radius:3px}.btn.primary{background:var(--lime);color:var(--pine)}.btn.outline{border:1px solid #ffffff88;color:white}.proofline{margin-top:58px;padding-top:20px;border-top:1px solid #ffffff44;display:flex;gap:28px;flex-wrap:wrap;color:#d3ded6;font-size:11px}.proofline span:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--lime);margin:0 9px 1px 0}
+section{scroll-margin-top:78px}.section{padding:94px 0}.white{background:white}.dark{background:var(--pine);color:white}.section-head{max-width:710px;margin-bottom:42px}.section h2{font-size:clamp(30px,4vw,46px);line-height:1.13;letter-spacing:-.035em;margin:12px 0 17px}.lead{font-size:15px;color:var(--muted);max-width:720px}.dark .lead{color:#c3d1c7}.split{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:center}.photo{min-height:420px;background:url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=85') center/cover;position:relative}.photo:after{content:"";position:absolute;inset:17px;border:1px solid #ffffff9c}.quote{font-size:21px;line-height:1.48;font-weight:600;letter-spacing:-.02em;margin:23px 0}.small-link{font-size:12px;color:var(--green);font-weight:800;border-bottom:1px solid var(--sage);padding-bottom:5px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:28px;background:white;border:1px solid var(--line);min-height:248px}.symbol{width:42px;height:42px;border:1px solid #cbd9cb;border-radius:50%;display:grid;place-items:center;color:var(--green);font-size:19px}.index{margin-top:20px;font-size:10px;color:#78917e;letter-spacing:.16em;font-weight:800}.card h3{font-size:19px;margin:10px 0}.card p{font-size:13px;color:var(--muted);margin:0}
+.factors{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:28px}.factor{padding:19px;background:#f4f6f1;border:1px solid var(--line)}.factor b{display:block;font-size:14px}.factor span{font-size:11px;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #50685a}.step{padding:26px 20px 0 0}.step b{font-size:11px;color:var(--lime);letter-spacing:.15em}.step h3{font-size:17px;margin:14px 0 6px}.step p{font-size:12px;color:#c3d1c7;margin:0}
+.segments{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.segment{background:white;border:1px solid var(--line);padding:22px;font-size:14px;font-weight:750}.segment span{display:block;font-size:11px;font-weight:400;color:var(--muted);margin-top:6px}
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:start}.formbox{background:white;color:var(--ink);padding:32px;border-radius:3px}.field{margin-bottom:14px}.field label{display:block;font-size:11px;font-weight:800;margin-bottom:5px}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#fbfcfa;padding:12px;font:inherit;font-size:13px;border-radius:2px}.field textarea{min-height:100px;resize:vertical}.formbox button{width:100%;border:0;cursor:pointer}.fine{font-size:10px;color:var(--muted);margin:12px 0 0}.contact-details{font-size:13px;color:#d1ddd4;margin-top:24px}.contact-details strong{color:white}
+footer{background:#091a14;color:#c4d1c8;padding:43px 0 22px}.foot-top{display:flex;justify-content:space-between;gap:30px;padding-bottom:30px}.foot-bottom{border-top:1px solid #304238;padding-top:18px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:10px}
+@media(max-width:850px){.links{display:none;position:absolute;top:78px;left:0;right:0;background:var(--pine);padding:22px;flex-direction:column;align-items:flex-start}.links.open{display:flex}.menu{display:block}.cta{display:none}.split,.contact{grid-template-columns:1fr;gap:35px}.cards{grid-template-columns:1fr 1fr}.segments,.factors{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr;row-gap:20px}.section{padding:72px 0}}
+@media(max-width:540px){.wrap{width:calc(100% - 32px)}.hero{min-height:610px;background-position:58% center}.hero-inner{padding:75px 0}.hero h1{font-size:42px}.hero p{font-size:14px}.proofline{flex-direction:column;gap:10px;margin-top:38px}.section{padding:64px 0}.cards,.segments,.factors,.steps{grid-template-columns:1fr}.photo{min-height:290px}.formbox{padding:22px}.foot-top{flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#inicio"><span class="brandmark">D</span><span>DESCARTE IDEAL<small>SOLUÇÕES AMBIENTAIS</small></span></a>
+<nav class="links" id="links"><a href="#empresa">A empresa</a><a href="#servicos">Serviços</a><a href="#metodo">Como trabalhamos</a><a href="#segmentos">Segmentos</a><a href="#contato">Contato</a></nav>
+<a class="cta" href="#contato">SOLICITAR ORÇAMENTO ↗</a><button class="menu" id="menu" aria-label="Abrir menu">☰</button>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="wrap"><div class="hero-inner">
+<div class="eyebrow">Soluções ambientais para empresas</div>
+<h1>Uma operação eficiente começa com a solução certa.</h1>
+<p>A Descarte Ideal conecta coleta, remoção e logística de resíduos em soluções planejadas de acordo com as características e necessidades de cada empresa.</p>
+<div class="actions"><a class="btn primary" href="#contato">Solicitar avaliação da operação ↗</a><a class="btn outline" href="#servicos">Conhecer soluções</a></div>
+<div class="proofline"><span>Atendimento empresarial</span><span>Operações pontuais e recorrentes</span><span>Dimensionamento por demanda</span></div>
+</div></div></section>
+<section class="section white" id="empresa"><div class="wrap split">
+<div><div class="eyebrow" style="color:#52765c">A Descarte Ideal</div><h2>Gestão, logística e execução conectadas.</h2>
+<p class="lead">Cada operação possui particularidades. Tipo de resíduo, quantidade, localização, distância e necessidade de transporte influenciam a solução mais adequada.</p>
+<p class="quote">Nosso trabalho começa entendendo a demanda para estruturar uma operação coerente com a realidade de cada cliente.</p>
+<a class="small-link" href="#contato">Fale com nossa equipe →</a></div>
+<div class="photo" role="img" aria-label="Ambiente de operação industrial"></div>
+</div></section>
+<section class="section" id="servicos"><div class="wrap">
+<div class="section-head"><div class="eyebrow" style="color:#52765c">Nossas soluções</div><h2>Da retirada à organização logística da operação.</h2><p class="lead">Atuação integrada para empresas que precisam organizar a coleta e a movimentação de resíduos com clareza de escopo e planejamento.</p></div>
+<div class="cards">
+<article class="card"><div class="symbol">↗</div><div class="index">01 / SERVIÇO EM DESTAQUE</div><h3>Coleta e remoção</h3><p>Organização de retiradas conforme o tipo de resíduo, volume, localização e frequência necessária.</p></article>
+<article class="card"><div class="symbol">⌁</div><div class="index">02 / LOGÍSTICA</div><h3>Transporte e frete</h3><p>Planejamento dos recursos de transporte, considerando as características da operação e a disponibilidade logística.</p></article>
+<article class="card"><div class="symbol">◎</div><div class="index">03 / PLANEJAMENTO</div><h3>Soluções integradas</h3><p>Estruturação de alternativas operacionais e comerciais adequadas à necessidade apresentada pela empresa.</p></article>
+</div>
+<div style="margin-top:38px"><h3 style="font-size:17px">Uma proposta construída a partir das variáveis da operação</h3><p class="lead">A avaliação comercial pode considerar fatores como:</p>
+<div class="factors"><div class="factor"><b>Tipo de resíduo</b><span>Características do material</span></div><div class="factor"><b>Peso e volume</b><span>Quantidade a ser retirada</span></div><div class="factor"><b>Distância</b><span>Local de coleta e deslocamento</span></div><div class="factor"><b>Frete</b><span>Modalidade e custo de transporte</span></div></div>
+</div>
+</div></section>
+<section class="section dark" id="metodo"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Como trabalhamos</div><h2>Processo claro. Escopo alinhado. Operação planejada.</h2><p class="lead">Um fluxo comercial e operacional para compreender a demanda antes de apresentar a solução.</p></div>
+<div class="steps">
+<div class="step"><b>ETAPA 01</b><h3>Entender</h3><p>Identificamos o tipo de resíduo, quantidade, localização e frequência da retirada.</p></div>
+<div class="step"><b>ETAPA 02</b><h3>Dimensionar</h3><p>Avaliamos distância, transporte e demais condições relevantes para a operação.</p></div>
+<div class="step"><b>ETAPA 03</b><h3>Propor</h3><p>Estruturamos uma proposta comercial conforme as informações e o escopo acordado.</p></div>
+<div class="step"><b>ETAPA 04</b><h3>Coordenar</h3><p>Organizamos o atendimento de acordo com as condições aprovadas pelo cliente.</p></div>
+</div>
+</div></section>
+<section class="section white" id="segmentos"><div class="wrap">
+<div class="section-head"><div class="eyebrow" style="color:#52765c">Atendimento empresarial</div><h2>Soluções ajustadas à realidade de cada negócio.</h2><p class="lead">A demanda é avaliada individualmente para entender as necessidades e condições de cada operação.</p></div>
+<div class="segments"><div class="segment">Indústrias<span>Retiradas e movimentação de resíduos de processos e operações.</span></div><div class="segment">Comércio e serviços<span>Demandas de coleta pontuais ou recorrentes.</span></div><div class="segment">Construção e obras<span>Necessidades específicas de remoção e transporte.</span></div><div class="segment">Empresas e instituições<span>Soluções compatíveis com a estrutura de cada local.</span></div></div>
+</div></section>
+<section class="section dark" id="contato"><div class="wrap contact">
+<div><div class="eyebrow">Contato comercial</div><h2>Vamos avaliar a necessidade da sua operação?</h2><p class="lead">Conte um pouco sobre sua demanda. Com essas informações, nossa equipe poderá dar continuidade ao atendimento comercial.</p><div class="contact-details"><strong>Para agilizar sua solicitação</strong><br>Informe, se possível, o tipo de resíduo, o peso ou volume estimado, o endereço de coleta e a frequência necessária.</div></div>
+<form class="formbox" id="quoteForm">
+<div class="field"><label for="nome">SEU NOME</label><input id="nome" name="nome" required placeholder="Nome e sobrenome"></div>
+<div class="field"><label for="empresa">EMPRESA</label><input id="empresa" name="empresa" required placeholder="Razão social ou nome fantasia"></div>
+<div class="field"><label for="contato">TELEFONE OU E-MAIL</label><input id="contato" name="contato" required maxlength="180" placeholder="Seu contato"></div>
+<div class="field" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden" aria-hidden="true"><label for="website">Não preencher</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+<div class="field"><label for="servico">SERVIÇO DE INTERESSE</label><select id="servico" name="servico"><option>Coleta e remoção</option><option>Transporte e logística</option><option>Solução integrada</option><option>Preciso de orientação</option></select></div>
+<div class="field"><label for="detalhes">INFORMAÇÕES DA OPERAÇÃO</label><textarea id="detalhes" name="detalhes" maxlength="3000" placeholder="Tipo de resíduo, peso/volume, local e frequência..."></textarea></div>
+<div class="field" style="display:flex;gap:9px;align-items:flex-start"><input id="consent" name="consent" type="checkbox" required style="width:auto;margin-top:4px"><label for="consent" style="font-weight:500">Autorizo a Descarte Ideal a utilizar estes dados para entrar em contato e tratar desta solicitação.</label></div>
+<button class="btn primary" id="submitQuote" type="submit">ENVIAR SOLICITAÇÃO ↗</button>
+<p class="fine" id="formStatus" role="status">Seus dados serão encaminhados à equipe comercial para avaliação da solicitação.</p>
+</form>
+</div></section>
+</main>
+<footer><div class="wrap"><div class="foot-top"><div><a class="brand" href="#inicio"><span class="brandmark">D</span><span>DESCARTE IDEAL<small>SOLUÇÕES AMBIENTAIS</small></span></a><p style="font-size:12px;max-width:390px">Coleta, remoção e soluções logísticas de resíduos para empresas.</p></div><div style="font-size:12px"><b style="color:white">NAVEGAÇÃO</b><p><a href="#empresa">A empresa</a> · <a href="#servicos">Serviços</a> · <a href="#metodo">Como trabalhamos</a> · <a href="#contato">Contato</a></p></div></div><div class="foot-bottom"><span>© <span id="year"></span> Descarte Ideal – Soluções Ambientais.</span><span>Todos os direitos reservados.</span></div></div></footer>
+<script>
+const menu=document.getElementById('menu'),links=document.getElementById('links');
+menu.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+const SUPABASE_FUNCTION_URL='https://addxfcpbgwgmgsphokyd.supabase.co/functions/v1/website-lead-intake';
+const SUPABASE_PUBLISHABLE_KEY='sb_publishable_XtONU8WiUJscoXQSn4F78g_sb7oTdm7';
+document.getElementById('quoteForm').addEventListener('submit',async e=>{
+ e.preventDefault();const form=e.currentTarget;const d=new FormData(form);const button=document.getElementById('submitQuote');const status=document.getElementById('formStatus');
+ button.disabled=true;button.textContent='ENVIANDO...';status.textContent='Enviando sua solicitação com segurança.';
+ try{
+  const response=await fetch(SUPABASE_FUNCTION_URL,{method:'POST',headers:{'Content-Type':'application/json','apikey':SUPABASE_PUBLISHABLE_KEY},body:JSON.stringify({name:d.get('nome'),company:d.get('empresa'),contact:d.get('contato'),service:d.get('servico'),details:d.get('detalhes'),consent:d.get('consent')==='on',website:d.get('website')})});
+  const result=await response.json();if(!response.ok||!result.ok)throw new Error(result.error||'Não foi possível enviar a solicitação.');
+  form.reset();status.textContent='Solicitação recebida! Nossa equipe comercial poderá dar continuidade ao atendimento.';button.textContent='SOLICITAÇÃO ENVIADA ✓';
+ }catch(error){status.textContent=error.message||'Falha no envio. Tente novamente mais tarde.';button.textContent='TENTAR NOVAMENTE ↗';button.disabled=false;}
+});
+</script>
+</body></html>
